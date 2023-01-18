@@ -1,0 +1,16 @@
+pipeline
+{
+	agent any
+	
+	stages
+	{
+		stage('Git Checkout')
+		{
+			steps
+			{
+				git branch: 'main', url: 'git credentialsId: '6295f93b-62a0-48a9-bcdf-baae4549e049', url: 'https://github.com/chirajyoti/Food-Delivery.git''
+			}
+		}
+	}
+
+}
