@@ -1,0 +1,34 @@
+<<<<<<< HEAD:Food-Delivery/JtProject/jenkinsfile
+pipeline
+{
+	agent any
+	
+	stages
+	{
+		stage('Git Checkout')
+		{
+			steps
+			{
+				git branch: 'main', url: 'git credentialsId: '6295f93b-62a0-48a9-bcdf-baae4549e049', url: 'https://github.com/chirajyoti/Food-Delivery.git''
+			}
+		}
+	}
+
+=======
+pipeline
+{
+	agent any
+	
+	stages
+	{
+		stage('Git Checkout')
+		{
+			steps
+			{
+				git branch: 'main', url: 'git credentialsId: '6295f93b-62a0-48a9-bcdf-baae4549e049', url: 'https://github.com/chirajyoti/Food-Delivery.git''
+			}
+		}
+	}
+
+>>>>>>> 2958cfe06385f2bc7e286f3d04a472ff18d7e31e:JtProject/jenkinsfile
+}
